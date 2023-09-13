@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header>
+  <nav>
+    <a href="/"><img src="/favicon.svg" alt="" width="28" height="28" /></a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/blog1/">Blog</a></li>
+      <li>
+        <a href="/alien/">Alien</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .icon-alien {
+    margin-top: -5px;
+  }
+  .icon-alien:hover {
+    cursor: url(/src/images/al16-y.png), auto;
+  }
+</style>

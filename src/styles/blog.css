@@ -1,0 +1,12 @@
+.img1 {
+  height: 260px;
+  width: auto;
+  margin: 30px auto;
+}
+.next {
+  font-weight: bolder;
+  color: gray;
+}
+.next:hover {
+  color: black;
+}

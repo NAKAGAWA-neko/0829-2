@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@layouts/layout.astro";
+
+import "@styles/blog.css";
+---
+
+<Layout>
+  <h1>Astro Blog</h1>
+
+  <Image
+    src="/src/images/astrof.png"
+    class="img1"
+    alt="宇宙人"
+    transition:name="alienImg"
+    width="260"
+    height="200"
+  />
+
+  <a class="next" href="/blog/blog2/">NEXT</a>
+</Layout>

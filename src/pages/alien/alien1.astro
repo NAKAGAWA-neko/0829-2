@@ -2,24 +2,24 @@
 import Layout from "@layouts/layout.astro";
 
 import { Image } from "astro:assets";
+import alienImage from "@images/first.jpg";
+
 import "@styles/alien.css";
 import "@styles/blog.css";
 ---
 
 <Layout>
-  <h1>This is an Alien!!</h1>
+  <h1>Looking for Aliens</h1>
   <div>
-    <a href="/alien/">
+    <a href="/alien/alien2/">
       <Image
-        src="/src/images/alien-aa1.jpg"
+        src={alienImage}
         class="aliensimg"
         alt="宇宙人"
         transition:name="alienImg"
-        width="1000"
-        height="700"
-      /></a
-    >
+      />
+    </a>
   </div>
 
-  <a class="next" href="/alien/">Back</a>
+  <a class="next" href="/alien/alien2/">NEXT</a>
 </Layout>

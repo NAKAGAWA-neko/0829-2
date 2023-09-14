@@ -1,6 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "@layouts/layout.astro";
+
+import { Image } from "astro:assets";
+import blogImage from "@images/alienface.png";
 
 import "@styles/blog.css";
 ---
@@ -8,14 +10,14 @@ import "@styles/blog.css";
 <Layout>
   <h1>Alien Blog</h1>
 
-  <Image
-    src="/src/images/alienface.png"
-    class="img1"
-    alt="宇宙人"
-    transition:name="alienImg"
-    width="260"
-    height="200"
-  />
+  <a href="/blog/blog1/">
+    <Image
+      src={blogImage}
+      class="img1"
+      alt="宇宙人"
+      transition:name="alienImg"
+    />
 
-  <a class="next" href="/blog/blog1/">BACK</a>
+    <a class="next" href="/blog/blog1/">BACK</a>
+  </a>
 </Layout>

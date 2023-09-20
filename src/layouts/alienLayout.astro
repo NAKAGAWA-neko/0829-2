@@ -1,0 +1,31 @@
+---
+import "@styles/config.css";
+import "@styles/aliendefault.css";
+import "@styles/alienlayout.css";
+
+import Header from "@components/alienHeader.astro";
+import Footer from "@components/footer.astro";
+import Container from "@components/container.astro";
+import Meta from "@components/meta.astro";
+
+import Backimage from "@components/backimage.astro";
+
+import { slide } from "astro:transitions";
+
+const props = Astro.props;
+---
+
+<html lang="ja" transition:animate="slide">
+  <Meta {...props} />
+
+  <body>
+    <Backimage />
+    <Container>
+      <Header />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </Container>
+  </body>
+</html>

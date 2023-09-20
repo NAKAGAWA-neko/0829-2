@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import alienlogoImage from "@images/logo_y.png";
+---
+
+<header>
+  <nav>
+    <a href="/"
+      ><Image
+        src={alienlogoImage}
+        class="alienlogoimg"
+        alt="宇宙人と待ち合わせ"
+      />
+    </a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/blog1/">Blog</a></li>
+      <li><a href="/alien/alien1/">Alien</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .alienlogoimg {
+    width: 150px;
+  }
+</style>

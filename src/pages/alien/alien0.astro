@@ -1,0 +1,131 @@
+---
+import Layout from "@layouts/alienLayout.astro";
+
+import { Image } from "astro:assets";
+import alienImage from "@images/first.jpg";
+
+import "@styles/alienstyle.css";
+---
+
+<Layout>
+  <div class="ba-image">
+    <section id="top">
+      <div class="top-main">
+        <h1>
+          高速で<br />
+           美しい宇宙人が<br />
+           来ています
+        </h1>
+        <div class="motto-btn-main">
+          <div>
+            <button
+              class="mottomiru-btn"
+              type="button"
+              onclick="location.href='#alien'"
+            >
+              <img src="/ufo256.png" alt="UFO" />もっと見る
+            </button>
+          </div>
+          <div>
+            <a href="##" class="mottomiru-btn2 btn2-rotate">
+              <span class="btn-sp-1">宇宙人に会う？</span>
+              <span class="btn-sp-2"
+                ><img src="/alienface.png" alt="UFO" /></span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- alienページ -->
+    <section id="alien">
+      <div class="alien-main">
+        <h2>宇宙人一覧</h2>
+        <h3>私が会ってきた宇宙人がこちらです。</h3>
+        <div class="alien-photo-main">
+          <a class="alien-photo" href="#"
+            ><img src="/alien00001.jpg" alt="宇宙人" /></a
+          >
+          <a class="alien-photo" href="#"
+            ><img src="/alien00007.jpg" alt="宇宙人" /></a
+          >
+          <a class="alien-photo" href="#"
+            ><img src="/alien00003.jpg" alt="宇宙人" /></a
+          >
+          <a class="alien-photo" href="#"
+            ><img src="/alien00004.jpg" alt="宇宙人" /></a
+          >
+          <a class="alien-photo" href="#"
+            ><img src="/alien00005.jpg" alt="宇宙人" /></a
+          >
+          <a class="alien-photo" href="#"
+            ><img src="/alien00006.jpg" alt="宇宙人" /></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- enjoyページ -->
+    <section id="enjoy">
+      <div class="enjoy-main">
+        <h2>宇宙人と行く日本</h2>
+        <h3>私が宇宙人と5年間以上で遊びに行った日本です。</h3>
+
+        <div class="enjoy-item-main">
+          <div class="enjoy-photo">
+            <img src="/alien00009.jpg" alt="浅草" />
+          </div>
+
+          <div class="enjoy-item">
+            <h4>浅草寺</h4>
+            <div class="item-c">
+              <a class="btn-s-1 bgskew"><span class="s-1">賽銭箱の魅力</span></a
+              >
+              <a class="btn-s-2 bgcenterout"
+                ><span class="s-2">おみくじをする意味</span></a
+              >
+            </div>
+            <p>お寺好き宇宙人。普段は人間になりすましてお寺で働いてます</p>
+          </div>
+        </div>
+
+        <div class="enjoy-item-main">
+          <div class="enjoy-photo">
+            <img src="/alien00008.jpg" alt="浅草" />
+          </div>
+
+          <div class="enjoy-item">
+            <h4>居酒屋</h4>
+            <div class="item-c">
+              <a class="btn-s-1 bgskew"><span class="s-1">焼き鳥</span></a>
+              <a class="btn-s-2 bgcenterout"
+                ><span class="s-2">ハイボール濃いめ</span></a
+              >
+            </div>
+            <p>
+              毎回同じものを注文。だいたい３杯飲んだら地球っていいよなって言ってくる
+            </p>
+          </div>
+        </div>
+
+        <div class="enjoy-item-main">
+          <div class="enjoy-photo">
+            <img src="/alien00010.jpg" alt="浅草" />
+          </div>
+
+          <div class="enjoy-item">
+            <h4>電車</h4>
+            <div class="item-c">
+              <a class="btn-s-1 bgskew"><span class="s-1">顔は下向き</span></a>
+              <a class="btn-s-2 bgcenterout"
+                ><span class="s-2">吊り革の革はどこ</span></a
+              >
+            </div>
+            <p>電車移動が好きな宇宙人。UFOは自動で呼べるらしい</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

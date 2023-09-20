@@ -10,17 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "3.0.0",
-    "astro-icon": "^0.8.1"
-  },
-  "devDependencies": {
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0"
-  },
-  "prettier.documentSelectors": [
-    "**/*.astro"
-  ],
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "@astrojs/mdx": "^1.1.0",
+    "astro": "3.1.0",
+    "astro-icon": "^0.8.1",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "jquery": "^3.7.1"
   }
 }

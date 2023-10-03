@@ -28,8 +28,14 @@ const { Content } = await post.render();
     <img src={image} alt="" />
     <h1>{title}</h1>
 
-    <div>
-      <Content />
+    <div class="flex-spacebetween">
+      <!-- 投稿日を出力 -->
+
+      <div class="flex">
+        <div>
+          <Content />
+        </div>
+      </div>
     </div>
   </article>
 </Layout>

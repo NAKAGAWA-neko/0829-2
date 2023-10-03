@@ -13,9 +13,14 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const sortedBlogPosts = blogPosts.sort((a, b) =>
     compareDesc(a.data.pubDate as Date, b.data.pubDate)
   );
+
   return categories.map((category) => {
     const { categorySlug, categoryName } = category;
-    return paginate(sortedBlogPosts, {
+
+    const filteredPosts = sortedBlogPosts.filter((post) => {
+      return post.data.category.includes(categorySlug);
+    });
+    return paginate(filteredPosts, {
       params: { categorySlug },
       props: { categoryName },
       pageSize: 6,
@@ -48,7 +53,7 @@ type PostData = {
   <h1>{categoryName}</h1>
   <div class="grid">
     {
-      data.map((post: PostData) => {
+      data.flatMap((post: PostData) => {
         const {
           slug,
           data: { image, title },
